@@ -1,0 +1,218 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-05-12 01:15:17'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hexo"><span class="site-name">Hexo</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hexo</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2023/01/18/11_%E5%BB%B6%E6%97%B6%E9%98%9F%E5%88%97%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88/" title="延时队列"><img class="post-bg" src="https://www.bing.com/th?id=OHR.WhiteSands_ROW8479743022_1920x1080.jpg&amp;rf=LaDigue_1920x1080.jpg&amp;qlt=50" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="延时队列"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/01/18/11_%E5%BB%B6%E6%97%B6%E9%98%9F%E5%88%97%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88/" title="延时队列">延时队列</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-01-17T16:00:00.000Z" title="Created 2023-01-18 00:00:00">2023-01-18</time></span></div><div class="content">延时队列方案需求背景有一个消息分发服务，从上游拉取消息， 通过http接口调用的方式分发消息给下游多个服务，由于下游服务可能存在宕机等情形，导致消息分发失败，需要进行重试。不确定下游服务何时能恢复，消息分发中心只能尽可能的重试，不保证消息一定是消费成功后才删除。考虑到下游服务恢复正常的时间未知，分发中心需要延时等待一段时间后再进行进行重试。
+
+延时队列技术选型方案1， 本地容器思路：可以采用时间轮，优先级队列等数据结构，以消息到期时间做排序。优点：简单快速缺点：单机不可扩展，稳定性，持久性，可靠性无保障。
+方案2， redis数据类型ZSet参考方案1，为解决上述确定，可用redis的ZSet实现。
+优点:
+
+从扩展性来看，redis属于中间件，可以多个服务共享一个redis服务，可扩展多个消费者消费同一个redis的延时队列。
+稳定性是由redis本身完善程度决定的，远比个人运行在本地内存的数据容器可靠
+持久性有AOF和RDB两种方案保证
+ZSet使用数据结构为跳表，查找和插入的时间复杂度均为O(nlog(n))
+
+缺点：
+
+无应答机制，消息消费后存在丢失可能。
+
+方案3， 消息队列 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/12/28/9_%E6%89%8B%E5%86%99%E6%99%BA%E8%83%BD%E6%8C%87%E9%92%88/" title="手写智能指针"><img class="post-bg" src="https://cn.bing.com/th?id=OHR.LakeKochelsee_ZH-CN0004970986_1920x1080.jpg&amp;rf=LaDigue_1920x1080.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="手写智能指针"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/28/9_%E6%89%8B%E5%86%99%E6%99%BA%E8%83%BD%E6%8C%87%E9%92%88/" title="手写智能指针">手写智能指针</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-27T16:00:00.000Z" title="Created 2021-12-28 00:00:00">2021-12-28</time></span></div><div class="content">toy智能指针初体验线程不安全智能指针实现头文件1234567891011121314151617181920#include &lt;cstdio&gt;template&lt;typename T&gt;class SmartPtr&#123;public:    SmartPtr(T* p);                                     // SmartPtr&lt;int&gt; p(new A)    SmartPtr(const SmartPtr&lt;T&gt;&amp; orig);                  // SmartPtr&lt;int&gt; p(q)    SmartPtr&lt;T&gt;&amp; operator = (const SmartPtr&lt;T&gt;&amp; rhs);   // SmartPtr&lt;int&gt; p = q    ~SmartPtr();                                        //     T operator * ();    T* ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/12/21/8_%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%A1%86%E6%9E%B6%E5%9B%9B%EF%BC%8C%E5%9F%BA%E4%BA%8Eucontext%E7%9A%84%E5%8D%8F%E7%A8%8B/" title="服务器框架四，基于ucontext的协程实现"><img class="post-bg" src="https://cn.bing.com/th?id=OHR.OreamnosAmericanus_ZH-CN6731612431_1920x1080.jpg&amp;rf=LaDigue_1920x1080.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="服务器框架四，基于ucontext的协程实现"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/21/8_%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%A1%86%E6%9E%B6%E5%9B%9B%EF%BC%8C%E5%9F%BA%E4%BA%8Eucontext%E7%9A%84%E5%8D%8F%E7%A8%8B/" title="服务器框架四，基于ucontext的协程实现">服务器框架四，基于ucontext的协程实现</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-20T16:00:00.000Z" title="Created 2021-12-21 00:00:00">2021-12-21</time></span></div><div class="content">协程及协程调度器实现协程类设计
+非对称协程，被调用者协程仅可切换回相应切换协程；
+主子协程模式，一个线程内仅可以在主协程和子协程之间切换
+
+协程类简述1234567891011121314151617181920class Fiber&#123;public:    Fiber(std::function&lt;void()&gt; cb, size_t stacksize = 0, bool use_caller = false);    ~Fiber();    void swapIn();    void swapOut();    enum State &#123;INIT, HOLD, EXEC, TERM, READY,EXCEPT&#125;;public:    static void SetThis(Fiber* f);    static Fiber::ptr GetThis();    static void MainFunc();    static uint64_t GetFiberId();private:    uint64_t m_id = 0;     ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/12/14/7_%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%A1%86%E6%9E%B6%E4%B8%89%EF%BC%8C%E7%BA%BF%E7%A8%8B%E5%92%8C%E9%94%81%E7%9A%84%E5%B0%81%E8%A3%85/" title="服务器框架三，线程和锁的封装"><img class="post-bg" src="https://cn.bing.com/th?id=OHR.PorcupineWillow_ZH-CN0280041973_1920x1080.jpg&amp;rf=LaDigue_1920x1080.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="服务器框架三，线程和锁的封装"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/14/7_%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%A1%86%E6%9E%B6%E4%B8%89%EF%BC%8C%E7%BA%BF%E7%A8%8B%E5%92%8C%E9%94%81%E7%9A%84%E5%B0%81%E8%A3%85/" title="服务器框架三，线程和锁的封装">服务器框架三，线程和锁的封装</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-13T16:00:00.000Z" title="Created 2021-12-14 00:00:00">2021-12-14</time></span></div><div class="content">线程和锁的封装线程类封装linux中很多像pthread.h这样的库，都是围绕一个资源–文件描述符， 进行各种操作–pthread_create, destory而这种c库的进行类封装，就是把资源定义成类内数据成员， 操作定义成成员函数， 以类的约束给出一个新的实体形式。为此，可以得到一个草稿如下：
+1234567891011class Thread&#123;public:    Thread(std::function&lt;void()&gt; cb, const std::string&amp; name = &quot;&quot;);    ~Thread();    void join();    void* run(void* arg);private:    pthread_t m_thread = 0; // 源自pthread_create(...)。全局唯一，不同进程内也不相同。而且是采用递增轮回法分配，短时间内启动多个线程也会具有不同的线程id。    std::function&lt;void()&gt;m_cb;&#125;;
+
+而后，围绕需求补全各种数据 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/12/07/6_%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%A1%86%E6%9E%B6%E4%BA%8C%EF%BC%8C%E9%85%8D%E7%BD%AE%E6%A8%A1%E5%9D%97/" title="服务器框架二，配置模块"><img class="post-bg" src="https://cn.bing.com/th?id=OHR.WinterBison_ZH-CN0120689382_1920x1080.jpg&amp;rf=LaDigue_1920x1080.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="服务器框架二，配置模块"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/07/6_%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%A1%86%E6%9E%B6%E4%BA%8C%EF%BC%8C%E9%85%8D%E7%BD%AE%E6%A8%A1%E5%9D%97/" title="服务器框架二，配置模块">服务器框架二，配置模块</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-06T16:00:00.000Z" title="Created 2021-12-07 00:00:00">2021-12-07</time></span></div><div class="content">配置器设置设计需求
+支持自定义配置， 如下
+1234567891011cylar::ConfigVar&lt;int&gt;::ptr g_int_value_config =    cylar::Config::Lookup(&quot;system.port&quot;, (int)8080, &quot;system port&quot;);cylar::ConfigVar&lt;float&gt;::ptr g_int_valuex_config =    cylar::Config::Lookup(&quot;system.port&quot;, (float)8080, &quot;system port&quot;);cylar::ConfigVar&lt;float&gt;::ptr g_float_value_config =    cylar::Config::Lookup(&quot;system.value&quot;, (float)10.2f, &quot;system value&quot;);cylar::ConfigVar&lt;std::vector ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/12/01/5_%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%A1%86%E6%9E%B6Sylar/" title="服务器框架一，日志模块"><img class="post-bg" src="https://cn.bing.com/th?id=OHR.JonesBeachHarpSeal_ZH-CN9584238333_1920x1080.jpg&amp;rf=LaDigue_1920x1080.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="服务器框架一，日志模块"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/01/5_%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%A1%86%E6%9E%B6Sylar/" title="服务器框架一，日志模块">服务器框架一，日志模块</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-11-30T16:00:00.000Z" title="Created 2021-12-01 00:00:00">2021-12-01</time></span></div><div class="content">日志器设计设计需求：
+支持日志等级配置，如INFO，DEBUG之类的
+支持日志自定义输出位置配置，如控制台或文件
+支持自定义日志格式，如”%p%T%d”之类的组合模式串
+支持 C++流式日志 和 C格式化日志的日志器。
+
+使用风格参考如下：
+1234567891011121314151617cylar::Logger::ptr logger(new cylar::Logger);logger-&gt;addAppender(cylar::LogAppender::ptr(new cylar::StdoutLogAppender));cylar::FileLogAppender::ptr file_appender(new cylar::FileLogAppender(&quot;./log.txt&quot;));logger-&gt;addAppender(file_appender);cylar::LogFormatter::ptr fmt(new cylar::LogFormatter(&quot;%d%T%p%m%n&quot;));file_appender-&gt;setF ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/11/23/4_%E5%86%85%E5%AD%98%E6%B1%A0%E5%AE%9E%E7%8E%B001/" title="内存池V1, 实现一个块大小固定的内存分配器"><img class="post-bg" src="https://cn.bing.com/th?id=OHR.SnowBuntings_ZH-CN6554424742_1920x1080.jpg&amp;rf=LaDigue_1920x1080.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="内存池V1, 实现一个块大小固定的内存分配器"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/11/23/4_%E5%86%85%E5%AD%98%E6%B1%A0%E5%AE%9E%E7%8E%B001/" title="内存池V1, 实现一个块大小固定的内存分配器">内存池V1, 实现一个块大小固定的内存分配器</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-11-22T16:00:00.000Z" title="Created 2021-11-23 00:00:00">2021-11-23</time></span></div><div class="content">内存池V1: 实现一个块大小固定的内存分配器类设计需求：
+RAII机制，构造函数申请堆内存， 析构函数释放堆内存
+禁止拷贝构造、赋值构造、移动构造、移动赋值构造
+分配内存功能    void* allocate(); &#x2F;&#x2F;不支持指定区块大小
+回收内存功能    void deallocate(void *p);
+
+代码实现123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108#ifndef POOL_ALLOC_H#define POOL_ALLOC_H#include &lt;cstdlib&gt;#include &lt;cstdio&gt;#include &lt;cstring&gt;c ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/11/15/3_%E8%99%9A%E5%87%BD%E6%95%B0%E5%92%8C%E8%99%9A%E6%8C%87%E9%92%88%E5%86%85%E5%AD%98%E5%88%86%E5%B8%83/" title="3_虚函数和虚指针内存分布"><img class="post-bg" src="https://cn.bing.com/th?id=OHR.AmericanRobin_ZH-CN0667508209_1920x1080.jpg&amp;rf=LaDigue_1920x1080.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="3_虚函数和虚指针内存分布"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/11/15/3_%E8%99%9A%E5%87%BD%E6%95%B0%E5%92%8C%E8%99%9A%E6%8C%87%E9%92%88%E5%86%85%E5%AD%98%E5%88%86%E5%B8%83/" title="3_虚函数和虚指针内存分布">3_虚函数和虚指针内存分布</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-11-14T16:00:00.000Z" title="Created 2021-11-15 00:00:00">2021-11-15</time></span></div><div class="content">虚函数和虚指针内存分布
+C++内存布局： C++中虚函数表位于只读数据段（.rodata），也就是C++内存模型中的常量区；而虚函数则位于代码段（.text），也就是C++内存模型中的代码区。
+
+一、示例代码：12345678910111213141516171819202122232425262728#include &lt;iostream&gt; using namespace std; class A&#123;public:	A()&#123;&#125;;	~A()&#123;&#125;;	virtual void vfun()&#123;cout&lt;&lt;&quot;vfun called!&quot;&lt;&lt;endl;&#125;&#125;; int main()&#123;	A *a = new A();	long vbaddr=*(int *)a;   //虚函数表地址	long vfaddr= *(int *)vbaddr;   //虚函数vfun地址    cout&lt;&lt;&quot;addr of a: &quot;&lt;&lt;a ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/11/08/2_QT%E6%9D%82%E8%AE%B0/" title="2_QT杂记"><img class="post-bg" src="https://cn.bing.com/th?id=OHR.WinterWaxwing_ZH-CN9435499385_1920x1080.jpg&amp;rf=LaDigue_1920x1080.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2_QT杂记"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/11/08/2_QT%E6%9D%82%E8%AE%B0/" title="2_QT杂记">2_QT杂记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-11-07T16:00:00.000Z" title="Created 2021-11-08 00:00:00">2021-11-08</time></span></div><div class="content">
+当信号和槽函数发生重载时
+
+qt5重定义函数指针连接方式: 麻烦，但有参数检查
+qt4宏定义连接方式： 简便，但无 参数检查
+
+ 123456789101112131415161718192021signals:    void hungry(); //只需要声明，不需要定义    void hungry(QString msg);slots:    void eat();    void eat(QString msg);//qt5重定义函数指针连接方式void (Girl::*hungry_default)() = &amp;Girl::hungry;void (Girl::*hungry_special)(QString) = &amp;Girl::hungry;void (Boy::*eat_default)() = &amp;Boy::eat;void (Boy::*eat_speial)(QString) = &amp;Boy::eat;connect(girl, hungry_default, boy, eat_default);connect(girl, hungry ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/11/01/1_Cpp%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="1_Cpp设计模式"><img class="post-bg" src="https://cn.bing.com/th?id=OHR.RydalWater_ZH-CN2787617470_1920x1080.jpg&amp;rf=LaDigue_1920x1080.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="1_Cpp设计模式"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/11/01/1_Cpp%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="1_Cpp设计模式">1_Cpp设计模式</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-10-31T16:00:00.000Z" title="Created 2021-11-01 00:00:00">2021-11-01</time></span></div><div class="content">设计模式概览目标：管理变化，提高复用
+手段：分解和抽象
+设计原则：
+    1. 依赖倒置： 不稳定依赖稳定，禁止反向依赖
+    2. 开放封闭： 允许扩展，禁止更改
+    3. 单一职责： 一个类只有一个变化的原因
+    4. Liskov替换原则： 要求子类能替换父类，不打破父类抽象约束
+    5. 接口隔离原则（ISP）： 尽量对外接口少而完整，减少客户依赖项
+    6. 优先组合，而非继承
+    7. 封装变化点：形成隔层，隔离开变化点
+    8. 专注接口编程，而非关注具体实现
+    9. 接口标准化
+重构技法：
+    1. 静态》动态
+    2. 早绑定》晚绑定
+    3. 继承》组合
+    4. 编译时依赖》运行时依赖
+    5. 紧耦合》松耦合
+从封装变化角度分类：
+    1. 组件协作：Template method, Strategy, Observer/Event
+    2. 单一职责：Decorator, Bridge
+    3. 对象创建：Factory Method, Abstract Factory, Prototype,  ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/01/18/11_%E5%BB%B6%E6%97%B6%E9%98%9F%E5%88%97%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88/" title="延时队列"><img src="https://www.bing.com/th?id=OHR.WhiteSands_ROW8479743022_1920x1080.jpg&amp;rf=LaDigue_1920x1080.jpg&amp;qlt=50" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="延时队列"/></a><div class="content"><a class="title" href="/2023/01/18/11_%E5%BB%B6%E6%97%B6%E9%98%9F%E5%88%97%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88/" title="延时队列">延时队列</a><time datetime="2023-01-17T16:00:00.000Z" title="Created 2023-01-18 00:00:00">2023-01-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/28/9_%E6%89%8B%E5%86%99%E6%99%BA%E8%83%BD%E6%8C%87%E9%92%88/" title="手写智能指针"><img src="https://cn.bing.com/th?id=OHR.LakeKochelsee_ZH-CN0004970986_1920x1080.jpg&amp;rf=LaDigue_1920x1080.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="手写智能指针"/></a><div class="content"><a class="title" href="/2021/12/28/9_%E6%89%8B%E5%86%99%E6%99%BA%E8%83%BD%E6%8C%87%E9%92%88/" title="手写智能指针">手写智能指针</a><time datetime="2021-12-27T16:00:00.000Z" title="Created 2021-12-28 00:00:00">2021-12-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/21/8_%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%A1%86%E6%9E%B6%E5%9B%9B%EF%BC%8C%E5%9F%BA%E4%BA%8Eucontext%E7%9A%84%E5%8D%8F%E7%A8%8B/" title="服务器框架四，基于ucontext的协程实现"><img src="https://cn.bing.com/th?id=OHR.OreamnosAmericanus_ZH-CN6731612431_1920x1080.jpg&amp;rf=LaDigue_1920x1080.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="服务器框架四，基于ucontext的协程实现"/></a><div class="content"><a class="title" href="/2021/12/21/8_%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%A1%86%E6%9E%B6%E5%9B%9B%EF%BC%8C%E5%9F%BA%E4%BA%8Eucontext%E7%9A%84%E5%8D%8F%E7%A8%8B/" title="服务器框架四，基于ucontext的协程实现">服务器框架四，基于ucontext的协程实现</a><time datetime="2021-12-20T16:00:00.000Z" title="Created 2021-12-21 00:00:00">2021-12-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/14/7_%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%A1%86%E6%9E%B6%E4%B8%89%EF%BC%8C%E7%BA%BF%E7%A8%8B%E5%92%8C%E9%94%81%E7%9A%84%E5%B0%81%E8%A3%85/" title="服务器框架三，线程和锁的封装"><img src="https://cn.bing.com/th?id=OHR.PorcupineWillow_ZH-CN0280041973_1920x1080.jpg&amp;rf=LaDigue_1920x1080.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="服务器框架三，线程和锁的封装"/></a><div class="content"><a class="title" href="/2021/12/14/7_%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%A1%86%E6%9E%B6%E4%B8%89%EF%BC%8C%E7%BA%BF%E7%A8%8B%E5%92%8C%E9%94%81%E7%9A%84%E5%B0%81%E8%A3%85/" title="服务器框架三，线程和锁的封装">服务器框架三，线程和锁的封装</a><time datetime="2021-12-13T16:00:00.000Z" title="Created 2021-12-14 00:00:00">2021-12-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/07/6_%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%A1%86%E6%9E%B6%E4%BA%8C%EF%BC%8C%E9%85%8D%E7%BD%AE%E6%A8%A1%E5%9D%97/" title="服务器框架二，配置模块"><img src="https://cn.bing.com/th?id=OHR.WinterBison_ZH-CN0120689382_1920x1080.jpg&amp;rf=LaDigue_1920x1080.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="服务器框架二，配置模块"/></a><div class="content"><a class="title" href="/2021/12/07/6_%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%A1%86%E6%9E%B6%E4%BA%8C%EF%BC%8C%E9%85%8D%E7%BD%AE%E6%A8%A1%E5%9D%97/" title="服务器框架二，配置模块">服务器框架二，配置模块</a><time datetime="2021-12-06T16:00:00.000Z" title="Created 2021-12-07 00:00:00">2021-12-07</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/01/"><span class="card-archive-list-date">January 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/12/"><span class="card-archive-list-date">December 2021</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/11/"><span class="card-archive-list-date">November 2021</span><span class="card-archive-list-count">4</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">10</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-05-11T17:15:17.210Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
